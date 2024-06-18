@@ -15,3 +15,13 @@ FROM sucursal s
 JOIN venta v ON s.idSucursal = v.FK_idSucursal
 GROUP BY s.idSucursal, s.nombreSucursal
 ORDER BY cantidad_ventas DESC;
+
+-- 3. ¿ Cuál es la sucursal con más ventas?
+SELECT
+    s.nombreSucursal AS nombre,
+    COUNT(v.idVenta) AS cantidad_ventas
+FROM sucursal s
+JOIN venta v ON s.idSucursal = v.FK_idSucursal
+GROUP BY s.idSucursal, s.nombreSucursal
+ORDER BY cantidad_ventas DESC
+LIMIT 1;
