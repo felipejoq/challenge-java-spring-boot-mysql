@@ -25,3 +25,16 @@ JOIN venta v ON s.idSucursal = v.FK_idSucursal
 GROUP BY s.idSucursal, s.nombreSucursal
 ORDER BY cantidad_ventas DESC
 LIMIT 1;
+
+-- 4. Dado el id de una sucursal muestre la lista de producto y su stock
+SELECT
+    p.nombreProducto AS producto,
+    cp.nombreCategoriaProducto AS categoria_producto,
+    su.nombreSucursal AS sucursal,
+    s.stock AS stock
+FROM producto p
+JOIN stock s ON p.idProducto = s.FK_idProducto
+JOIN categoria_producto cp ON p.FK_idCategoriaProducto = cp.idCategoriaProducto
+JOIN sucursal su ON s.FK_idSucursal = su.idSucursal
+WHERE su.idSucursal = 1
+ORDER BY stock DESC;
