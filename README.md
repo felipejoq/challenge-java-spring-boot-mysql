@@ -34,3 +34,5 @@ la aplicación podrá ver la web funcionando en su navegador al visitar: http://
 El archivo script para crear el esquema de base de datos puede ser encontrado en este archivo: [MiniMarket.sql](4-otros-archivos/minimarket.sql)
 y puede ser importado directamente en phpmyadmin o en cualquier IDE que permita gestionar bases de datos como
 MySQL Workbench, por ejemplo.
+
+Los requerimientos de este desafío quedan expresados en este archivo PDF: [Desafio Fullstack Java.pdf](4-otros-archivos/requisitos-del-challenge.pdf)
