@@ -16,6 +16,12 @@ Solo debe ejecutar la aplicación e interactuar con la consola.
 - [Aplicación Web](3-app-web) Finalmente, este proyecto incluye una aplicación web construida con Spring Boot y JSP, al ejecutar
 la aplicación podrá ver la web funcionando en su navegador al visitar: http://localhost:8080/
 
+- También se agrega un servicio REST que se me había olvidado para consultar el stock de un producto filtrando por id de sucursal y producto, así:
+
+  ```
+  /api/stocks?sucursalId={id:number}&productoId={id:number}
+  ```
+
 ### Requisitos generales.
 
 - IDE: IntelliJ IDEA o Eclipse.
