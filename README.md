@@ -1,4 +1,4 @@
-# Prueba de certificación FullStack Java
+# Desafío/Challenge/Prueba - FullStack Java
 Este repositorio incluye 3 proyectos separados en carpetas.
 
 ## 1. [Consultas SQL]
